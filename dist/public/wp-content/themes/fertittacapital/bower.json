@@ -1,0 +1,23 @@
+{
+  "name": "sage",
+  "homepage": "https://roots.io/sage/",
+  "authors": [
+    "Ben Word <ben@benword.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "flexslider": "^2.6.3"
+  },
+  "overrides": {
+    "flexslider": {
+      "main": [
+          "./bower_components/flexslider/fonts/flexslider-icon.eot",
+          "./bower_components/flexslider/fonts/flexslider-icon.svg",
+          "./bower_components/flexslider/fonts/flexslider-icon.ttf",
+          "./bower_components/flexslider/fonts/flexslider-icon.woff",
+          "./bower_components/flexslider/flexslider.css"
+        ]
+    }
+  }
+}

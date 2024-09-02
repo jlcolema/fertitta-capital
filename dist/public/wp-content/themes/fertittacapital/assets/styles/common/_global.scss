@@ -1,0 +1,440 @@
+
+/*-------------------------------------------
+	Global
+-------------------------------------------*/
+
+
+html {
+
+	font-size: 62.5%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+
+}
+
+body {
+
+	@include font-size(13);
+	line-height: 1.384615385; // 18px
+	font-family: "Campton Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: rgb(64, 64, 65);
+	background: $white;
+	// -webkit-font-smoothing: antialiased;
+
+	.home & {
+
+		overflow: hidden;
+
+	}
+
+}
+
+
+/* Block Level */
+
+
+h1 {
+
+	@include font-size(46);
+	line-height: 1.086956522; // 50px
+	font-family: "Quincy Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: $primary-color;
+
+}
+
+h2 {
+
+	margin: 1.774193548em 0 0.532258065em 0; // 55px 0 16px 0
+	font-family: "Campton Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	@include font-size(31);
+	line-height: 1; // 62px;
+	// line-height: (35/31) + em;
+
+}
+
+h3 {
+
+	// margin-bottom: (25/25) + em;
+	// @include font-size(25);
+	// line-height: (33/25) + em;
+	// @include skolar-bold;
+
+}
+
+h4 {
+
+	// margin-bottom: (20/17) + em;
+	// @include font-size(17);
+	// line-height: (22/17) + em;
+	// @include freight-sans-book;
+
+}
+
+h5 {
+
+	// margin-bottom: (20/17) + em;
+	// @include font-size(16);
+	// line-height: (26/17) + em;
+	// @include freight-sans-book;
+
+}
+
+h6 {
+
+	// margin-bottom: (20/16) + em;
+	// @include font-size(16);
+	// line-height: (26/16) + em;
+	// @include freight-sans-book;
+
+}
+
+p {
+
+	max-width: 670px;
+	// margin-bottom: (26/18) + em;
+
+	&:last-of-type {}
+
+}
+
+ol {
+
+	// margin-bottom: (26/18) + em;
+	// padding: 0 0 0 18px;
+	// list-style-type: decimal;
+
+	li {}
+
+}
+
+ul {
+
+	// margin-bottom: (26/18) + em;
+	// padding: 0 0 0 18px;
+	// list-style-type: disc;
+
+	li {}
+
+}
+
+dl {}
+
+	dt {
+
+		// font-weight: bold;
+
+	}
+
+	dd {
+
+		// margin-bottom: (28/17) + em;
+
+	}
+
+table {}
+
+th {
+
+	// padding: 8px;
+	// @include font-size(11);
+	// line-height: (13/11) + em;
+	// font-weight: normal;
+	// color: $gray;
+
+}
+
+td {
+
+	// padding: 8px;
+	// @include font-size(12);
+	// line-height: (14/12) + em;
+
+}
+
+article {}
+
+caption {}
+
+figure {}
+
+figcaption {
+
+	// margin: 20px 0 0 0;
+	// @include font-size(16);
+	// line-height: (20/16) + em;
+	// @include ff-tisa-sans-italic;
+
+}
+
+blockquote {
+
+	p {
+
+		// @include font-size(19);
+		// line-height: (26/19) + em;
+
+	}
+
+}
+
+/* Inline */
+
+i,
+em {
+
+	// font-style: italic;
+
+}
+
+cite {
+
+	// @include font-size(15);
+	// line-height: (18/15) + em;
+
+	&:before {
+
+		// content: "— ";
+
+	}
+
+}
+
+b,
+strong {
+
+	// font-weight: bold;
+
+}
+
+a {
+
+	color: $primary-color;
+	text-decoration: none;
+
+	&:link {}
+
+	&:hover,
+	&:focus {}
+
+}
+
+img {
+
+	display: block;
+	box-sizing: content-box;
+
+}
+
+code {}
+
+sub, sup {
+
+	// line-height: 0;
+
+}
+
+ins {
+
+	// color: $black;
+	// background-color: #fcd700;
+	// text-decoration: none;
+
+}
+
+mark {
+
+	// color: $black;
+	// background-color: #fcd700;
+	// font-style: italic;
+	// font-weight: bold;
+
+}
+
+::-moz-selection {
+
+	// color: $black;
+	// background: rgb(246, 203, 32);
+	// text-shadow: none;
+
+}
+
+::selection {
+
+	// color: $gray;
+	// background: rgb(246, 203, 32);
+	// text-shadow: none;
+
+}
+
+
+::-webkit-input-placeholder {
+
+	color: rgb(102, 102, 102);
+
+}
+
+::-moz-placeholder {
+
+	color: rgb(102, 102, 102);
+
+}
+
+:-moz-placeholder {
+
+	color: rgb(102, 102, 102);
+
+}
+
+:-ms-input-placeholder {
+
+	color: rgb(102, 102, 102);
+
+}
+
+
+/*-------------------------------------------
+	Forms
+-------------------------------------------*/
+
+
+form {}
+
+fieldset {}
+
+legend {
+
+	// display: block;
+	// margin: 0 0 10px 0;
+	// @include font-size(16);
+	// line-height: (20/16) + em;
+	// @include ff-tisa-sans-regular;
+	// text-transform: uppercase;
+
+}
+
+label {
+
+	display: none;
+	// display: block;
+	// margin: 0 0 10px 0;
+	// @include font-size(16);
+	// line-height: (20/16) + em;
+	// @include ff-tisa-sans-regular;
+	// text-transform: uppercase;
+
+}
+
+input {
+
+	&[type="text"],
+	&[type="search"],
+	&[type="email"],
+	&[type="tel"],
+	&[type="password"] {
+
+		// Override general styles applied to iOS devices.
+
+		-webkit-appearance: none;
+
+		display: block;
+		width: 100%;
+		padding: 11px 0 5px 0;
+		@include font-size(21);
+		// line-height: 1; // 42px;
+		font-family: "Campton Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		color: rgb(64, 64, 65);
+		// background: pink;
+		border: none;
+		border-bottom: 2px solid rgb(203, 204, 205);
+		border-radius: 0;
+
+	}
+
+	&[type="checkbox"] {
+
+		// position: relative;
+		// top: -3px;
+		// margin: 0 7px 0 0;
+
+	}
+
+	&[type="radio"] {
+
+		// position: relative;
+		// top: -4px;
+		// margin: 0 5px 0 0;
+
+	}
+
+	&[type="button"],
+	&[type="submit"] {
+
+		// Override general styles applied to iOS devices.
+
+		-webkit-appearance: none;
+
+		display: block;
+		padding: 10px 21px 5px 21px;
+		@include font-size(21);
+		line-height: 1.476190476; // 31px
+		font-family: "Campton Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		text-transform: uppercase;
+		// text-align: center;
+		color: $white;
+		background: $primary-color;
+		border: none;
+		border-radius: 3px;
+		transition: background-color 0.35s ease-in-out;
+
+		&:focus,
+		&:hover {
+
+			background: darken($primary-color, 10%);
+
+		}
+
+	}
+
+}
+
+textarea {
+
+	// Override general styles applied to iOS devices.
+
+	-webkit-appearance: none;
+
+	display: block;
+	width: 100%;
+	max-width: 100%;
+	height: 44px;
+	padding: 11px 0 5px 0;
+	@include font-size(21);
+	// line-height: 1; // 42px;
+	font-family: "Campton Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: rgb(64, 64, 65);
+	// background: pink;
+	border: none;
+	border-bottom: 2px solid rgb(203, 204, 205);
+	border-radius: 0;
+
+}
+
+button {
+
+	// Override general styles applied to iOS devices.
+
+	-webkit-appearance: none;
+
+	// display: block;
+	// padding: 11px 25px;
+	// @include font-size(16);
+	// line-height: (20/16) + em;
+	// @include ff-tisa-sans-regular;
+	// text-transform: uppercase;
+	// text-align: center;
+	// color: $white;
+	// background: rgb(66, 165, 205);
+	// border: none;
+	// @include border-radius(0);
+
+}

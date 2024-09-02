@@ -1,0 +1,113 @@
+
+//-------------------------------------------
+//	Fonts
+//-------------------------------------------
+
+
+// Font Family: Campton
+// Service: MyFonts
+// URL: https://www.myfonts.com/fonts/rene-bieder/campton/
+
+
+// Import (is this required since the fonts are local?)
+
+
+// @import url("//hello.myfonts.net/count/33043e");
+
+
+// Light
+
+  
+@font-face {
+
+	font-family: 'Campton Light';
+
+	src: url('../fonts/campton-light.eot');
+	src: url('../fonts/campton-light.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/campton-light.woff2') format('woff2'),
+		 url('../fonts/campton-light.woff') format('woff'),
+		 url('../fonts/campton-light.ttf') format('truetype');
+
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+// Book
+
+  
+@font-face {
+
+	font-family: 'Campton Book';
+
+	src: url('../fonts/campton-book.eot');
+	src: url('../fonts/campton-book.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/campton-book.woff2') format('woff2'),
+		 url('../fonts/campton-book.woff') format('woff'),
+		 url('../fonts/campton-book.ttf') format('truetype');
+
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+// Medium
+
+  
+@font-face {
+
+	font-family: 'Campton Medium';
+
+	src: url('../fonts/campton-medium.eot');
+	src: url('../fonts/campton-medium.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/campton-medium.woff2') format('woff2'),
+		 url('../fonts/campton-medium.woff') format('woff'),
+		 url('../fonts/campton-medium.ttf') format('truetype');
+
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+// Semibold
+
+  
+@font-face {
+
+	font-family: 'Campton Semibold';
+
+	src: url('../fonts/campton-semibold.eot');
+	src: url('../fonts/campton-semibold.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/campton-semibold.woff2') format('woff2'),
+		 url('../fonts/campton-semibold.woff') format('woff'),
+		 url('../fonts/campton-semibold.ttf') format('truetype');
+
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+// Font Family: Quincy CF
+// Service: YouWorkForThem
+// URL: https://www.youworkforthem.com/font/T5527/quincy-cf
+
+
+@font-face {
+	
+	font-family: 'Quincy Regular';
+	
+	src: url('../fonts/quincy-regular.eot');
+	src: url('../fonts/quincy-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/quincy-regular.woff2') format('woff2'),
+	     url('../fonts/quincy-regular.woff') format('woff'),
+	     url('../fonts/quincy-regular.ttf') format('truetype'),
+	     url('../fonts/quincy-regular.svg#quincy-regular') format('svg');
+	
+	font-weight: normal;
+	font-style: normal;
+
+}

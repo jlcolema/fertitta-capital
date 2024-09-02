@@ -1,0 +1,235 @@
+
+/*-------------------------------------------
+	Header
+-------------------------------------------*/
+
+
+#header {
+
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	background: $white;
+	// border-bottom: 1px solid rgb(203, 204, 205);
+	z-index: 100;
+
+	.wrap {
+
+		position: relative;
+		height: 100px;
+
+	}
+
+}
+
+		#logo {
+
+			position: absolute;
+			left: 10px;
+			top: 50%;
+			margin-top: -30px;
+			@include hide-text;
+			z-index: 1;
+
+			@media screen and (min-width: 600px) {
+
+				left: 30px;
+
+			}
+
+			@media screen and (min-width: 900px) {
+
+				left: 70px;
+
+			}
+
+			a {
+
+				display: block;
+				width: 140px;
+				height: 60px;
+				background: url(../images/logo.png);
+				background-size: 140px 60px;
+
+				&:hover {}
+
+			}
+
+		}
+
+		#nav {
+
+			.toggle {
+
+				position: fixed;
+				top: 30px;
+				right: 12px;
+				@include hide-text;
+				cursor: pointer;
+				z-index: 5;
+
+				@media screen and (min-width: 440px) {
+
+					display: none;
+
+				}
+
+				span {
+
+					display: block;
+					width: 40px;
+					height: 40px;
+					background: url(../images/nav-toggle.svg);
+					background-size: 40px 80px;
+
+					.nav-open & {
+
+						background-position: 0 -40px;
+
+					}
+
+				}
+
+			}
+
+			.nav-wrapper {
+
+				display: none;
+
+				position: fixed;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				background: rgb(203, 204, 205);
+				z-index: 1;
+
+				.nav-open & {
+
+					display: block;
+
+				}
+
+				@media screen and (min-width: 440px) {
+
+					display: block !important;
+					position: static;
+					width: auto;
+					height: auto;
+					background: none;
+
+				}
+
+			}
+
+				.menu-primary-navigation-container {
+
+					display: table;
+					width: 100%;
+					height: 100%;
+
+					@media screen and (min-width: 440px) {
+
+						display: block;
+						position: absolute;
+						right: 10px;
+						top: 40px;
+						width: auto;
+						height: auto;
+						z-index: 1;
+
+					}
+
+					@media screen and (min-width: 600px) {
+
+						right: 30px;
+
+					}
+
+					@media screen and (min-width: 900px) {
+
+						right: 70px;
+
+					}
+
+				}
+
+					ul {
+
+						display: table-cell;
+						vertical-align: middle;
+
+						@media screen and (min-width: 440px) {
+
+							@include group;
+
+						}
+
+					}
+
+						li {
+
+							margin: 0 0 5px 0;
+							font-family: "Campton Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+							@include font-size(12);
+							line-height: 1.416666667; // 34px;
+							text-transform: uppercase;
+							text-align: center;
+
+							@media screen and (min-width: 440px) {
+
+								float: left;
+								margin: 0 5px 0 0;
+								text-align: left;
+
+							}
+
+							&:last-of-type {
+
+								@media screen and (min-width: 440px) {
+
+									margin: 0;
+
+								}
+
+							}
+
+						}
+
+							a {
+
+								display: block;
+								height: 25px;
+								padding: 5px 7px 0 7px;
+								color: $white;
+								// background: pink;
+								transition: color 0.35s ease-in-out;
+
+								@media screen and (min-width: 440px) {
+
+									color: rgb(126, 128, 129);
+
+								}
+
+								&:hover {
+
+									color: $primary-color;
+
+								}
+
+							}
+
+						.current-menu-item {
+
+							a {
+
+								color: $primary-color;
+
+								&:hover {}
+
+							}
+
+						}
+
+		}

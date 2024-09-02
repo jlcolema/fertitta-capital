@@ -1,0 +1,452 @@
+
+/*-------------------------------------------
+	Content
+-------------------------------------------*/
+
+
+#content {
+
+	padding: 148px 0 0 0; // Accounts for fixed header, plus addition vertical space.
+
+	.wrap {}
+
+}
+
+		.section-title {
+
+			margin-bottom: 62px;
+
+			// Home page doesn't show this area.
+
+			.home & {
+
+				display: none;
+
+			}
+
+			// Adjustment to reduce spacing between h1 and form section.
+
+			.partner-with-us & {
+
+				margin-bottom: 47px;
+
+			}
+
+			h1 {}
+
+		}
+
+		// Home
+
+.flexslider {
+  margin: 0;
+  padding: 0;
+}
+.flexslider .slides > blockquote {
+  display: none;
+  -webkit-backface-visibility: hidden;
+}
+.flexslider .slides img {
+  width: 100%;
+  display: block;
+}
+.flexslider .slides:after {
+  content: "\0020";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+html[xmlns] .flexslider .slides {
+  display: block;
+}
+* html .flexslider .slides {
+  height: 1%;
+}
+.no-js .flexslider .slides > blockquote:first-child {
+  display: block;
+}
+
+		.quotes {
+
+			.flexslider {}
+
+				.slides {}
+
+					blockquote {
+
+						padding: 0 0 0 13px;
+
+					}
+
+						p {
+
+							max-width: 745px;
+							position: relative;
+							@include font-size(46);
+							line-height: 1.086956522; // 50px
+							font-family: "Quincy Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+							color: $primary-color;
+
+							&:before {
+
+								content: "\201C";
+								position: absolute;
+								left: -16px;
+								top: 0;
+								z-index: 1;
+
+							}
+
+							&:after {
+
+								content: "\201D";
+
+							}
+
+						}
+
+						.source {
+
+							margin: 30px 0 0 0;
+							font-family: "Campton Semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+							@include font-size(15);
+							line-height: 1.2; // 18px
+							text-transform: uppercase;
+
+						}
+
+						.position {
+
+							margin: 1px 0 0 0;
+							font-family: "Campton Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
+							@include font-size(15);
+							line-height: 1.2; // 18px
+							text-transform: uppercase;
+							color: rgb(196, 154, 108);
+
+						}
+
+		}
+
+		// Philosophy
+
+		// Partner with Us
+
+		.contact-information-group {
+
+			@media screen and (min-width: 840px) {
+
+				@include group;
+
+			}
+
+		}
+
+			.gform_wrapper {
+
+				margin: 0 0 40px 0;
+
+				@media screen and (min-width: 840px) {
+
+					float: left;
+					width: 47.058823529%;
+
+				}
+
+			}
+
+				form {}
+
+					.validation_error {
+
+						margin: 0 0 30px 0;
+						@include font-size(11);
+						color: red;
+
+					}
+
+					.gform_body {}
+
+						.gform_fields {
+
+							@media screen and (min-width: 380px) {
+
+								@include group;
+
+							}
+
+						}
+
+							.gfield {
+
+								margin-bottom: 33px;
+
+							}
+
+							// Phone
+
+							#field_1_3 {
+
+								@media screen and (min-width: 380px) {
+
+									float: left;
+									width: 50%;
+									padding: 0 8px 0 0;
+
+								}
+
+							}
+
+							// Company
+
+							#field_1_4 {
+
+								@media screen and (min-width: 380px) {
+
+									float: right;
+									width: 50%;
+									padding: 0 0 0 8px;
+
+								}
+
+							}
+
+							// Message
+
+							#field_1_5 {
+
+								clear: both;
+
+							}
+
+							.gform_validation_container {
+
+								display: none;
+
+							}
+
+								label {}
+
+								.ginput_container {}
+
+									input[type="text"],
+									input[type="email"],
+									input[type="tel"] {}
+
+									textarea {}
+
+								.ginput_complex {
+
+									@media screen and (min-width: 380px) {
+
+										@include group;
+
+									}
+
+								}
+
+									.name_first {
+
+										display: block;
+										margin-bottom: 33px;
+
+										@media screen and (min-width: 380px) {
+
+											float: left;
+											width: 50%;
+											margin: 0;
+											padding: 0 8px 0 0;
+
+										}
+
+									}
+
+									.name_last {
+
+										@media screen and (min-width: 380px) {
+
+											float: right;
+											width: 50%;
+											padding: 0 0 0 8px;
+
+										}
+
+									}
+
+								.validation_message {
+
+									margin: 10px 0 0 0;
+									@include font-size(11);
+									color: red;
+
+								}
+
+					.gform_footer {
+
+						margin: 7px 0 0 0;
+						padding: 32px 0 0 0;
+						border-top: 2px solid rgb(203, 204, 205);
+						@include group;
+
+					}
+
+						.gform_button {
+
+							float: right;
+
+						}
+
+			.detailed-h-card {
+
+				@include font-size(13);
+				line-height: 1.230769231; // 16px
+
+				@media screen and (min-width: 380px) {
+
+					@include font-size(21);
+					line-height: 1.238095238; // 26px
+
+				}
+
+				@media screen and (min-width: 840px) {
+
+					float: right;
+					padding: 26px 0 0 0;
+					width: 44.117647059%;
+
+				}
+
+				.p-name {
+
+					display: none;
+
+					a {
+
+						&:hover {}
+
+					}
+
+				}
+
+				.p-adr {
+
+					position: relative;
+					margin: 0 0 27px 0;
+					padding: 0 0 0 32px;
+
+					&:before {
+
+						content: "";
+						position: absolute;
+						left: 0;
+						top: -5px;
+						width: 25px;
+						height: 25px;
+						background: url(../images/contact-icons.png);
+						background-size: 75px 25px;
+						z-index: 1;
+
+						@media screen and (min-width: 380px) {
+
+							top: -2px;
+
+						}
+
+					}
+
+				}
+
+					.p-street-address {}
+
+						.suite {}
+
+					.p-locality {}
+
+					.p-region {}
+
+					.p-postal-code {}
+
+				.p-tel {
+
+					position: relative;
+					margin: 0 0 27px 0;
+					padding: 0 0 0 32px 0;
+
+					&:before {
+
+						content: "";
+						position: absolute;
+						left: 0;
+						top: -5px;
+						width: 25px;
+						height: 25px;
+						background: url(../images/contact-icons.png) -25px 0;
+						background-size: 75px 25px;
+						z-index: 1;
+
+						@media screen and (min-width: 380px) {
+
+							top: -2px;
+
+						}
+
+					}
+
+					a {
+
+						color: rgb(64, 64, 65);
+						transition: color 0.35s ease-in-out;
+
+						&:hover {
+
+							color: $primary-color;
+
+						}
+
+					}
+
+				}
+
+				.u-email {
+
+					position: relative;
+					padding: 0 0 0 32px;
+
+					&:before {
+
+						content: "";
+						position: absolute;
+						left: 0;
+						top: -5px;
+						width: 25px;
+						height: 25px;
+						background: url(../images/contact-icons.png) -50px 0;
+						background-size: 75px 25px;
+						z-index: 1;
+
+						@media screen and (min-width: 380px) {
+
+							top: -2px;
+
+						}
+
+					}
+
+					a {
+
+						color: rgb(64, 64, 65);
+						transition: color 0.35s ease-in-out;
+
+						&:hover {
+
+							color: $primary-color;
+
+						}
+
+					}
+
+				}
+
+			}

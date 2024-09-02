@@ -1,4 +1,18 @@
 .DS_Store
-*.sql
-wp-config*
-fertitta*
+organize/*
+
+# Ignore everything in the root except the "wp-content" directory.
+
+dist/public/*
+!dist/public/wp-content/
+
+# Ignore everything in the "wp-content" directory, except:
+# "mu-plugins", "plugins", "themes" directory.
+
+dist/public/wp-content/*
+!dist/public/wp-content/themes/
+
+# Ignore specific themes.
+
+dist/public/wp-content/themes/*
+!dist/public/wp-content/themes/fertittacapital/

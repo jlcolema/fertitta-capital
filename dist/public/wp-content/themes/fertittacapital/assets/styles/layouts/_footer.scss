@@ -1,0 +1,142 @@
+
+/*-------------------------------------------
+	Footer
+-------------------------------------------*/
+
+
+#footer {
+
+	padding: 75px 0 60px 0;
+
+	.home & {
+
+		display: none;
+
+	}
+
+	.wrap {}
+
+}
+
+		.button-large {
+
+			margin: 0 0 40px 0;
+			font-family: "Campton Semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			@include font-size(19);
+			line-height: 1.368421053; // 26px;
+			text-transform: uppercase;
+
+			.partner-with-us & {
+
+				display: none;
+
+			}
+
+			a {
+
+				display: inline-block;
+				padding: 11px 21px 7px 21px;
+				color: $white;
+				background: $primary-color;
+				border-radius: 3px;
+				transition: background-color 0.35s ease-in-out;
+
+				&:hover {
+
+					background: darken($primary-color, 10%);
+
+				}
+
+			}
+
+		}
+
+		.shortened-h-card {
+
+			font-family: "Campton Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			@include font-size(9);
+			line-height: 1.666666667; // 15px
+			text-transform: uppercase;
+			color: rgb(102, 102, 102);
+
+			@media screen and (min-width: 440px) {
+
+				display: inline;
+
+			}
+
+			.p-tel {
+
+				display: inline;
+
+				&:after {
+
+					content: "\007C";
+					margin: 0 8px 0 10px;
+
+				}
+
+				a {
+
+					color: rgb(102, 102, 102);
+					transition: color 0.35s ease-in-out;
+
+					&:hover {
+
+						color: $primary-color;
+
+					}
+
+				}
+
+			}
+
+			.u-email {
+
+				display: inline;
+
+				&:after {
+
+					@media screen and (min-width: 440px) {
+
+						content: "\007C";
+						margin: 0 8px 0 8px;
+
+					}
+
+				}
+
+				a {
+
+					color: rgb(102, 102, 102);
+					transition: color 0.35s ease-in-out;
+
+					&:hover {
+
+						color: $primary-color;
+
+					}
+
+				}
+
+			}
+
+		}
+
+		.copyright {
+
+			margin: 3px 0 0 0;
+			font-family: "Campton Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			@include font-size(9);
+			line-height: 1.666666667; // 15px
+			text-transform: uppercase;
+			color: rgb(102, 102, 102);
+
+			@media screen and (min-width: 440px) {
+
+				display: inline;
+				margin: 0;
+
+			}
+
+		}
